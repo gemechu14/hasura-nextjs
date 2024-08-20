@@ -1,0 +1,1 @@
+CREATE TABLE "public"."pizza_topping_pizza" ("id" serial NOT NULL, "pizza_id" integer NOT NULL, "pizza_topping_id" integer NOT NULL, PRIMARY KEY ("id") , FOREIGN KEY ("pizza_id") REFERENCES "public"."pizza"("id") ON UPDATE restrict ON DELETE restrict, FOREIGN KEY ("pizza_topping_id") REFERENCES "public"."pizza_topping"("id") ON UPDATE restrict ON DELETE restrict);
